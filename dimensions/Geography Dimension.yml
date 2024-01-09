@@ -1,7 +1,7 @@
 unique_name: Geography Dimension
 object_type: dimension
 label: Geography Dimension
-type: other
+type: standard
 
 hierarchies:
 

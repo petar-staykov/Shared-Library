@@ -2,7 +2,7 @@ unique_name: Customer Dimension
 object_type: dimension
 label: Customer Dimension v2
 description: Customer Key
-type: other
+type: standard
 
 hierarchies:
 
