@@ -1,7 +1,7 @@
 unique_name: Order Dimension
 object_type: dimension
 label: Order Dimension
-type: other
+type: standard
 
 hierarchies:
 

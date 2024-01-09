@@ -2,7 +2,7 @@ unique_name: Product Dimension
 object_type: dimension
 label: Product Dimension
 description: "Product Line, Category, and Name"
-type: other
+type: standard
 
 hierarchies:
 
