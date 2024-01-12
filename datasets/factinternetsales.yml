@@ -1,4 +1,4 @@
-unique_name: factinternetsales
+unique_name: factinternetsales_shared
 object_type: dataset
 label: factinternetsales
 connection_id: Snowflake
