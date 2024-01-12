@@ -1,8 +1,0 @@
-unique_name: salesplan
-object_type: metric
-label: Sales Plan
-calculation_method: count distinct
-folder: Sales Plan
-format: General Number
-dataset: factinternetsales_shared
-column: customerkey
