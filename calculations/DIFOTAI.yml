@@ -1,0 +1,14 @@
+unique_name: DIFOTAI
+object_type: metric_calc
+label: DIFOTAI
+description: Delivered in Full, On Time, Accurately Invoiced
+expression: >
+  Avg(
+
+  PeriodsToDate([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],
+  ParallelPeriod([Order Date Dimension].[Order Retail445].[Order
+  ReportIng_Year], 1, [Order Date Dimension].[Order Retail445].CurrentMember)), 
+
+  [Measures].[customercount1])
+format: General Number
+is_hidden: false

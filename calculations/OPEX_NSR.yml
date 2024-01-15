@@ -1,0 +1,17 @@
+unique_name: OPEX_NSR
+object_type: metric_calc
+label: OPEX % NSR
+description: OPEX as a % of NSR
+expression: >
+  CASE WHEN ISEMPTY([Measures].[customercount1]) 
+
+  THEN NULL
+
+  ELSE
+
+  ([Order Date Dimension].[Order Retail445].CurrentMember.PrevMember,
+  [Measures].[customercount1])
+
+  END
+format: General Number
+is_hidden: false

@@ -1,0 +1,16 @@
+unique_name: OOS
+object_type: metric_calc
+label: OOS
+description: Out of Stock
+expression: >-
+  CASE WHEN ISEMPTY([Measures].[customercount1]) THEN NULL 
+
+  ELSE 
+
+  Avg(PeriodsToDate([Order Date Dimension].[Order Retail445].[Order
+  ReportIng_Year], [Order Date Dimension].[Order Retail445].CurrentMember),
+  [Measures].[customercount1]) 
+
+  END 
+format: General Number
+is_hidden: false
