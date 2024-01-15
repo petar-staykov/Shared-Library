@@ -6,7 +6,7 @@ type: standard
 
 hierarchies:
 
-  - unique_name: Product Dimension
+  - unique_name: Product Dimension Hierarchy
     label: Product Hierarchy
     folder: Product Attributes
 

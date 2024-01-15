@@ -5,7 +5,7 @@ type: standard
 
 hierarchies:
 
-  - unique_name: Order Dimension
+  - unique_name: Order Dimension Hierarchy
     label: Order Dimension
     folder: Orders
 

@@ -5,7 +5,7 @@ type: standard
 
 hierarchies:
 
-  - unique_name: Row Level Security by Region
+  - unique_name: Row Level Security by Region Hierarchy
     label: Row Level Security by Region
 
     levels:
