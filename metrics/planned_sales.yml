@@ -1,6 +1,6 @@
-unique_name: salesplan
+unique_name: planned_sales
 object_type: metric
-label: Sales Plan
+label: Sales Volume Plan
 description: Planned sales volume
 calculation_method: sum
 column: orderquantity

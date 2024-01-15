@@ -1,7 +1,7 @@
-unique_name: salesplan
+unique_name: nsr
 object_type: metric
-label: Sales Plan
-description: Planned sales volume
+label: NSR
+description: Net Sales Revenue
 calculation_method: sum
 column: orderquantity
 dataset: factinternetsales_shared

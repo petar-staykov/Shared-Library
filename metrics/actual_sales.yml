@@ -1,7 +1,7 @@
-unique_name: salesplan
+unique_name: actual_sales
 object_type: metric
-label: Sales Plan
-description: Planned sales volume
+label: Sales Volume Act
+description: Actual sales volume
 calculation_method: sum
 column: orderquantity
 dataset: factinternetsales_shared

@@ -1,7 +1,7 @@
-unique_name: salesplan
+unique_name: planned_production
 object_type: metric
-label: Sales Plan
-description: Planned sales volume
+label: Production Volume Plan
+description: Planned production volume
 calculation_method: sum
 column: orderquantity
 dataset: factinternetsales_shared

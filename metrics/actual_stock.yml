@@ -1,0 +1,9 @@
+unique_name: actual_stock
+object_type: metric
+label: Stock Quantity
+description: Stock on hand in the warehouse
+calculation_method: maximum
+column: orderquantity
+dataset: factinternetsales_shared
+folder: Sales Plan
+format: General Number

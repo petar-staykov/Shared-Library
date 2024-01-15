@@ -1,9 +1,9 @@
-unique_name: salesplan
+unique_name: overtime
 object_type: metric
-label: Sales Plan
-description: Planned sales volume
+label: Overtime Hours
+description: Overtime recorded in Hours
 calculation_method: sum
-column: orderquantity
+column: unitprice
 dataset: factinternetsales_shared
 folder: Sales Plan
 format: General Number

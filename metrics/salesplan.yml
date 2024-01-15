@@ -1,9 +1,0 @@
-unique_name: salesplan
-object_type: metric
-label: Sales Plan
-description: Planned sales volume
-calculation_method: sum
-column: orderquantity
-dataset: factinternetsales_shared
-folder: Sales Plan
-format: General Number
