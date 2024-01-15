@@ -1,7 +1,7 @@
-unique_name: Productivity
+unique_name: inventory_days
 object_type: metric_calc
-label: Productivity per FTE
-description: 'Productivity per Full Time Equivalent '
+label: Total Inventory Days
+description: Total Inventory Coverdays
 expression: >-
   CASE WHEN ISEMPTY([Measures].[customercount1]) THEN 
 

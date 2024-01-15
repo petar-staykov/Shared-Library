@@ -1,7 +1,7 @@
-unique_name: Productivity
+unique_name: demand_variability
 object_type: metric_calc
-label: Productivity per FTE
-description: 'Productivity per Full Time Equivalent '
+label: Demand Variability %
+description: Demand Variability in %
 expression: >-
   CASE WHEN ISEMPTY([Measures].[customercount1]) THEN 
 
@@ -10,5 +10,5 @@ expression: >-
   ELSE (ParallelPeriod([Order Date Dimension].[Order Retail445].[Order
   ReportIng_Year], 1, [Order Date Dimension].[Order Retail445].CurrentMember),
   [Measures].[customercount1]) END
-format: General Number
+format: percent
 is_hidden: false

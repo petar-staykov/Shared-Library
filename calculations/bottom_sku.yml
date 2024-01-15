@@ -1,7 +1,7 @@
-unique_name: Productivity
+unique_name: bottom_sku
 object_type: metric_calc
-label: Productivity per FTE
-description: 'Productivity per Full Time Equivalent '
+label: Bottom 1% SKU
+description: Bottom 1% SKU
 expression: >-
   CASE WHEN ISEMPTY([Measures].[customercount1]) THEN 
 

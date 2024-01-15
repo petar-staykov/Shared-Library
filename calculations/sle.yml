@@ -1,7 +1,7 @@
-unique_name: Productivity
+unique_name: sle
 object_type: metric_calc
-label: Productivity per FTE
-description: 'Productivity per Full Time Equivalent '
+label: SLE
+description: System Line Efficiency
 expression: >-
   CASE WHEN ISEMPTY([Measures].[customercount1]) THEN 
 

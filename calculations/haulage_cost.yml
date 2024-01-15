@@ -1,7 +1,7 @@
-unique_name: Productivity
+unique_name: haulage_cost
 object_type: metric_calc
-label: Productivity per FTE
-description: 'Productivity per Full Time Equivalent '
+label: Haulage cost
+description: Haulage cost as a % NSR
 expression: >-
   CASE WHEN ISEMPTY([Measures].[customercount1]) THEN 
 
