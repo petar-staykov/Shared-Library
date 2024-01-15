@@ -1,0 +1,14 @@
+unique_name: Productivity
+object_type: metric_calc
+label: Productivity per FTE
+description: 'Productivity per Full Time Equivalent '
+expression: >-
+  CASE WHEN ISEMPTY([Measures].[customercount1]) THEN 
+
+  NULL 
+
+  ELSE (ParallelPeriod([Order Date Dimension].[Order Retail445].[Order
+  ReportIng_Year], 1, [Order Date Dimension].[Order Retail445].CurrentMember),
+  [Measures].[customercount1]) END
+format: General Number
+is_hidden: false
