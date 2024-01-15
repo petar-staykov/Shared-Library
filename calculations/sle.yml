@@ -1,7 +1,7 @@
 unique_name: sle
 object_type: metric_calc
 label: SLE
-description: System Line Efficiency
+description: System Line Efficiency in %
 expression: >-
   CASE WHEN ISEMPTY([Measures].[customercount1]) THEN 
 
@@ -10,5 +10,5 @@ expression: >-
   ELSE (ParallelPeriod([Order Date Dimension].[Order Retail445].[Order
   ReportIng_Year], 1, [Order Date Dimension].[Order Retail445].CurrentMember),
   [Measures].[customercount1]) END
-format: General Number
+format: Percentage
 is_hidden: false
