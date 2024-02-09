@@ -1,6 +1,6 @@
 unique_name: Order Dimension
 object_type: dimension
-label: Order Dimension v3
+label: Order Dimension
 type: standard
 
 hierarchies:
