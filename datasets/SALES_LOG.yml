@@ -1,35 +1,34 @@
 unique_name: SALES_LOG
 object_type: dataset
 label: SALES_LOG
-description: This is a log of our sales at the sku level
 columns:
-  - dataType: string
+  - data_type: string
     name: SALESORDERNUMBER
-  - dataType: decimal(38,0)
+  - data_type: decimal(38,0)
     name: SALESORDERLINENUMBER
-  - dataType: string
+  - data_type: string
     name: SALES_REASONS
-  - dataType: decimal(38,0)
+  - data_type: decimal(38,0)
     name: PRODUCTKEY
-  - dataType: string
+  - data_type: string
     name: PRODUCT_INFO
-  - dataType: decimal(38,0)
+  - data_type: decimal(38,0)
     name: ORDERDATEKEY
-  - dataType: decimal(38,0)
+  - data_type: decimal(38,0)
     name: CUSTOMERKEY
-  - dataType: decimal(38,0)
+  - data_type: decimal(38,0)
     name: ORDERQUANTITY
-  - dataType: double
+  - data_type: double
     name: UNITPRICE
-  - dataType: double
+  - data_type: double
     name: SALESAMOUNT
-  - dataType: double
+  - data_type: double
     name: TAXAMT
-  - dataType: string
+  - data_type: string
     name: ORDERDATE
-  - dataType: decimal(38,0)
+  - data_type: decimal(38,0)
     name: SHIPDATEKEY
-  - dataType: decimal(38,0)
+  - data_type: decimal(38,0)
     name: CURRENCYKEY
-connection_id: con_DEMO_AS_ADVENTURE
+connection_id: Snowflake
 table: SALES_LOG
