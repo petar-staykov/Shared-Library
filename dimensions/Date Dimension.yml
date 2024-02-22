@@ -1,6 +1,6 @@
 unique_name: Date Dimension
 object_type: dimension
-label: Date Dimension
+label: Date Dimension v2
 description: "Date Dimension that includes Gregorian, ISO8601 and Retail 445 calendars"
 type: time
 
