@@ -1,34 +1,34 @@
-unique_name: SALES_LOG
+unique_name: sales_log
 object_type: dataset
-label: SALES_LOG
+label: sales_log
 columns:
   - data_type: string
-    name: SALESORDERNUMBER
+    name: salesordernumber
   - data_type: decimal(38,0)
-    name: SALESORDERLINENUMBER
+    name: salesorderlinenumber
   - data_type: string
-    name: SALES_REASONS
+    name: sales_reasons
   - data_type: decimal(38,0)
-    name: PRODUCTKEY
+    name: productkey
   - data_type: string
-    name: PRODUCT_INFO
+    name: product_info
   - data_type: decimal(38,0)
-    name: ORDERDATEKEY
+    name: orderdatekey
   - data_type: decimal(38,0)
-    name: CUSTOMERKEY
+    name: customerkey
   - data_type: decimal(38,0)
-    name: ORDERQUANTITY
+    name: orderquantity
   - data_type: double
-    name: UNITPRICE
+    name: unitprice
   - data_type: double
-    name: SALESAMOUNT
+    name: salesamount
   - data_type: double
-    name: TAXAMT
+    name: taxamt
   - data_type: string
-    name: ORDERDATE
+    name: orderdate
   - data_type: decimal(38,0)
-    name: SHIPDATEKEY
+    name: shipdatekey
   - data_type: decimal(38,0)
-    name: CURRENCYKEY
+    name: currencykey
 connection_id: Snowflake
-table: SALES_LOG
+table: sales_log
