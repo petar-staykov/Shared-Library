@@ -30,5 +30,5 @@ columns:
     name: shipdatekey
   - data_type: decimal(38,0)
     name: currencykey
-connection_id: con_QT_as_adventure
+connection_id: Snowflake
 table: sales_log
