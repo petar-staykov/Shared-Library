@@ -1,0 +1,34 @@
+unique_name: SALES_LOG
+object_type: dataset
+label: SALES_LOG
+columns:
+  - data_type: string
+    name: SALESORDERNUMBER
+  - data_type: decimal(38,0)
+    name: SALESORDERLINENUMBER
+  - data_type: string
+    name: SALES_REASONS
+  - data_type: decimal(38,0)
+    name: PRODUCTKEY
+  - data_type: string
+    name: PRODUCT_INFO
+  - data_type: decimal(38,0)
+    name: ORDERDATEKEY
+  - data_type: decimal(38,0)
+    name: CUSTOMERKEY
+  - data_type: decimal(38,0)
+    name: ORDERQUANTITY
+  - data_type: double
+    name: UNITPRICE
+  - data_type: double
+    name: SALESAMOUNT
+  - data_type: double
+    name: TAXAMT
+  - data_type: string
+    name: ORDERDATE
+  - data_type: decimal(38,0)
+    name: SHIPDATEKEY
+  - data_type: decimal(38,0)
+    name: CURRENCYKEY
+connection_id: con_DEMO_AS_ADVENTURE
+table: SALES_LOG
