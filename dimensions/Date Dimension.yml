@@ -11,17 +11,6 @@ hierarchies:
     levels:
       - unique_name: YearMonth
         time_unit: year
-      - unique_name: Quarter
-        secondary_attributes:
-          - unique_name: d_quarter_number
-            label: Quarter Number
-            dataset: DateCustom
-            folder: Date Attributes
-            key_columns:
-              - quarter_of_year
-            name_column: quarter_of_year
-            sort_column: quarter_of_year
-        time_unit: quarter
       - unique_name: Month1
         secondary_attributes:
           - unique_name: d_month_of_year
@@ -116,13 +105,6 @@ level_attributes:
       - month
     name_column: month_name
     sort_column: month
-  - unique_name: Quarter
-    label: Quarter
-    dataset: DateCustom
-    key_columns:
-      - quarter
-    name_column: quarter_name
-    sort_column: quarter
   - unique_name: YearMonth
     label: Year
     description: Year level of the Standard Calendar Month Hierarchy.
