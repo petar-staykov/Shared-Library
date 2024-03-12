@@ -2,7 +2,7 @@ unique_name: DateCustom
 object_type: dataset
 label: DateCustom
 connection_id: Snowflake
-table: datecustom
+table: DateCustom
 
 columns:
   - name: date_name
