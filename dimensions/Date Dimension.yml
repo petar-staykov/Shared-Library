@@ -15,12 +15,12 @@ hierarchies:
         secondary_attributes:
           - unique_name: d_quarter_number
             label: Quarter Number
-            contains_unique_names: false
             dataset: DateCustom
-            is_unique_key: false
+            folder: Date Attributes
             key_columns:
               - quarter_of_year
             name_column: quarter_of_year
+            sort_column: quarter_of_year
         time_unit: quarter
       - unique_name: Month1
         secondary_attributes:
@@ -116,6 +116,13 @@ level_attributes:
       - month
     name_column: month_name
     sort_column: month
+  - unique_name: Quarter
+    label: Quarter
+    dataset: DateCustom
+    key_columns:
+      - quarter
+    name_column: quarter_name
+    sort_column: quarter
   - unique_name: YearMonth
     label: Year
     description: Year level of the Standard Calendar Month Hierarchy.
@@ -124,15 +131,4 @@ level_attributes:
       - year
     name_column: year_name
     sort_column: year
-  - unique_name: Quarter
-    label: Quarter
-    allowed_calcs_for_dma:
-      - ParallelPeriod
-    contains_unique_names: false
-    dataset: DateCustom
-    is_unique_key: false
-    key_columns:
-      - quarter
-    name_column: quarter_name
-    sort_column: quarter
 type: time
