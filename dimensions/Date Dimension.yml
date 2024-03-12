@@ -3,25 +3,90 @@ object_type: dimension
 label: Date Dimension
 description: Date Dimension that includes Gregorian, ISO8601 and Retail 445 calendars
 hierarchies:
-  - unique_name: Date Week Hierarchy
-    label: Date Week Hierarchy
+  - unique_name: Date Month Hierarchy
+    label: Date Month Hierarchy
+    description: A Gregorian Date Hierarchy.  Organizes time by Year, Quarter, Month, Day.
     filter_empty: 'yes'
     folder: Date Attributes
     levels:
-      - unique_name: YearWeek
+      - unique_name: YearMonth
         time_unit: year
-      - unique_name: Week
+      - unique_name: Month1
         secondary_attributes:
-          - unique_name: d_week_of_year
-            label: Week Of Year
+          - unique_name: d_month_of_year
+            label: Month Of Year
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
-              - week_of_year
-            name_column: week_of_year
-            sort_column: week_of_year
-        time_unit: week
+              - month_of_year
+            name_column: month_of_year
+            sort_column: month_of_year
+        time_unit: month
       - unique_name: DayMonth
+        secondary_attributes:
+          - unique_name: d_day_of_month
+            label: Day Of Month
+            associated_hierarchy: Date Month Hierarchy
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - day_of_month
+            name_column: day_of_month
+            sort_column: day_of_month
+          - unique_name: d_day_of_week_name
+            label: Day Of Week Name
+            associated_hierarchy: Date Month Hierarchy
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - day_of_week_name
+            name_column: day_of_week_name
+            sort_column: day_of_week_name
+          - unique_name: d_day_of_week_number
+            label: Day Of Week Number
+            associated_hierarchy: Date Month Hierarchy
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - day_of_week
+            name_column: day_of_week
+            sort_column: day_of_week
+          - unique_name: Day_Date
+            label: Day Date
+            associated_hierarchy: Date Month Hierarchy
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - pk_date
+            name_column: pk_date
+            sort_column: pk_date
+          - unique_name: W_Day_Date
+            label: W Day Date
+            associated_hierarchy: Date Week Hierarchy
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - pk_date
+            name_column: pk_date
+            sort_column: pk_date
+          - unique_name: w_day_of_week_name
+            label: W Day Of Week Name
+            associated_hierarchy: Date Week Hierarchy
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - day_of_week_name
+            name_column: day_of_week_name
+            sort_column: day_of_week_name
+          - unique_name: w_day_of_week_number
+            label: W Day Of Week Number
+            associated_hierarchy: Date Week Hierarchy
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - day_of_week
+            name_column: day_of_week
+            sort_column: day_of_week
         time_unit: day
 level_attributes:
   - unique_name: DayMonth
@@ -33,15 +98,16 @@ level_attributes:
       - datekey
     name_column: date_name
     sort_column: datekey
-  - unique_name: Week
-    label: Week
+  - unique_name: Month1
+    label: Month
     dataset: DateCustom
     key_columns:
-      - week
-    name_column: week_name
-    sort_column: week
-  - unique_name: YearWeek
+      - month
+    name_column: month_name
+    sort_column: month
+  - unique_name: YearMonth
     label: Year
+    description: Year level of the Standard Calendar Month Hierarchy.
     dataset: DateCustom
     key_columns:
       - year
