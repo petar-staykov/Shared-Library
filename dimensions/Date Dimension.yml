@@ -22,25 +22,6 @@ hierarchies:
             name_column: month_of_year
             sort_column: month_of_year
         time_unit: month
-      - unique_name: Reporting_Week
-        secondary_attributes:
-          - unique_name: Reporting_Week_Of_Year
-            label: Reporting Week Of Year
-            contains_unique_names: false
-            dataset: DateCustom
-            is_unique_key: false
-            key_columns:
-              - reporting_week_of_year
-            name_column: reporting_week_of_year
-          - unique_name: Reporting_Week_Of_Month
-            label: Reporting Week Of Month
-            contains_unique_names: false
-            dataset: DateCustom
-            is_unique_key: false
-            key_columns:
-              - reporting_week_of_month
-            name_column: reporting_week_of_month
-        time_unit: week
       - unique_name: DayMonth
         secondary_attributes:
           - unique_name: d_day_of_month
@@ -132,16 +113,4 @@ level_attributes:
       - year
     name_column: year_name
     sort_column: year
-  - unique_name: Reporting_Week
-    label: Reporting Week
-    description: Week level for 4-4-5 retail calendar
-    allowed_calcs_for_dma:
-      - ParallelPeriod
-    contains_unique_names: false
-    dataset: DateCustom
-    is_unique_key: false
-    key_columns:
-      - reporting_week
-    name_column: reporting_week_name
-    sort_column: reporting_week
 type: time
