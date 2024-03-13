@@ -13,7 +13,7 @@ hierarchies:
         time_unit: year
       - unique_name: Quarter
         secondary_attributes:
-          - unique_name: d_quarter_name
+          - unique_name: Quarter Name
             label: Quarter Name
             dataset: DateCustom
             folder: Date Attributes
