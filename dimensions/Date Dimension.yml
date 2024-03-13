@@ -11,6 +11,17 @@ hierarchies:
     levels:
       - unique_name: YearMonth
         time_unit: year
+      - unique_name: Quarter
+        secondary_attributes:
+          - unique_name: d_quarter_number
+            label: Quarter Number
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - quarter_of_year
+            name_column: quarter_of_year
+            sort_column: quarter_of_year
+        time_unit: quarter
       - unique_name: Month1
         secondary_attributes:
           - unique_name: d_month_of_year
@@ -464,4 +475,14 @@ level_attributes:
       - year
     name_column: year_name
     sort_column: year
+  - unique_name: Quarter
+    label: Quarter
+    allowed_calcs_for_dma:
+      - ParallelPeriod
+    contains_unique_names: false
+    dataset: DateCustom
+    is_unique_key: false
+    key_columns:
+      - quarter
+    name_column: quarter_name
 type: time
