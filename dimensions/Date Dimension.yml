@@ -477,6 +477,7 @@ level_attributes:
     sort_column: year
   - unique_name: Quarter
     label: Quarter
+    description: Quarter of retail 4-4-5 hierarchy
     allowed_calcs_for_dma:
       - ParallelPeriod
     contains_unique_names: false
