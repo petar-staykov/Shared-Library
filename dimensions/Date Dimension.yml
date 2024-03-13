@@ -11,16 +11,16 @@ hierarchies:
     levels:
       - unique_name: ReportIng_Year
         time_unit: year
-      - unique_name: ReportIng_Quarter
+      - unique_name: Quarter
         secondary_attributes:
-          - unique_name: Reporting_Quarter_Of_Year
-            label: ReportIng Quarter Of Year
+          - unique_name: d_quarter_name
+            label: Quarter Name
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
-              - reporting_quarter_of_year
-            name_column: reporting_quarter_of_year_name
-            sort_column: reporting_quarter_of_year_name
+              - quarter_of_year
+            name_column: quarter_of_year
+            sort_column: quarter_of_year
         time_unit: quarter
       - unique_name: ReportIng_Month
         secondary_attributes:
@@ -93,13 +93,6 @@ level_attributes:
       - reporting_month
     name_column: reporting_month_name2
     sort_column: reporting_month
-  - unique_name: ReportIng_Quarter
-    label: ReportIng Quarter
-    dataset: DateCustom
-    key_columns:
-      - reporting_quarter
-    name_column: reporting_quarter_name
-    sort_column: reporting_quarter
   - unique_name: ReportIng_Year
     label: ReportIng Year
     dataset: DateCustom
@@ -107,4 +100,14 @@ level_attributes:
       - reporting_year
     name_column: reporting_year_name
     sort_column: reporting_year
+  - unique_name: Quarter
+    label: Quarter
+    allowed_calcs_for_dma:
+      - ParallelPeriod
+    contains_unique_names: false
+    dataset: DateCustom
+    is_unique_key: false
+    key_columns:
+      - quarter
+    name_column: quarter_name
 type: time
