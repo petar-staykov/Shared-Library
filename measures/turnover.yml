@@ -6,4 +6,4 @@ calculation_method: sum
 column: unitprice
 dataset: factinternetsales_shared
 folder: Sales Plan
-format: General Number
+format: general number

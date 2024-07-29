@@ -3,4 +3,4 @@ object_type: metric_calc
 label: Forecast Accuracy based on actual percentage error
 expression: "([Measures].[actual_sales] - [Measures].[planned_sales])/[Measures].[actual_sales]"
 folder: Time Relative
-format: General Number
+format: general number

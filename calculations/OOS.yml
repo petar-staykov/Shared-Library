@@ -12,5 +12,5 @@ expression: >-
   [Measures].[customercount1]) 
 
   END 
-format: General Number
+format: general number
 is_hidden: false

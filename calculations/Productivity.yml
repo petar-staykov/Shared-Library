@@ -10,5 +10,5 @@ expression: >-
   ELSE (ParallelPeriod([Order Date Dimension].[Order Retail445].[Order
   ReportIng_Year], 1, [Order Date Dimension].[Order Retail445].CurrentMember),
   [Measures].[customercount1]) END
-format: General Number
+format: general number
 is_hidden: false
