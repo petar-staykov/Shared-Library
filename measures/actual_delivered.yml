@@ -1,6 +1,6 @@
 unique_name: actual_delivered
 object_type: metric
-label: Delivered Volume
+label: Delivered Volume Cases
 description: Delivered volume
 calculation_method: sum
 column: orderquantity
