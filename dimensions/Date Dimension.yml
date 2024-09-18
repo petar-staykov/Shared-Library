@@ -1,6 +1,6 @@
 unique_name: Date Dimension
 object_type: dimension
-label: Date Dimension v3
+label: Date Dimension v4
 description: Date Dimension that includes Gregorian, ISO8601 and Retail 445 calendars
 hierarchies:
   - unique_name: Date Month Hierarchy
