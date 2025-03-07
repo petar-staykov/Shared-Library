@@ -225,9 +225,8 @@ hierarchies:
       - unique_name: customquarter
         parallel_periods:
           - key_columns:
-              - name: reporting_quarter_lykey
-                data_type: datetime
-            period: TimeYears
+              - reporting_quarter_lykey
+            level: customyear
         secondary_attributes:
           - unique_name: d_Custom_Quarter_Of_Year
             label: Custom Quarter Of Year
@@ -240,9 +239,8 @@ hierarchies:
       - unique_name: custommonth
         parallel_periods:
           - key_columns:
-              - name: reporting_month_lykey
-                data_type: datetime
-            period: TimeYears
+              - reporting_month_lykey
+            level: customyear
         secondary_attributes:
           - unique_name: d_Custom_Month_Name
             label: Custom Month Name
@@ -271,9 +269,8 @@ hierarchies:
       - unique_name: customweek
         parallel_periods:
           - key_columns:
-              - name: reporting_week_lykey
-                data_type: datetime
-            period: TimeYears
+              - reporting_week_lykey
+            level: customyear
         secondary_attributes:
           - unique_name: d_Custom_Week_Of_Month
             label: Custom Week Of Month
@@ -294,9 +291,8 @@ hierarchies:
       - unique_name: customday
         parallel_periods:
           - key_columns:
-              - name: reporting_day_lykey
-                data_type: datetime
-            period: TimeYears
+              - reporting_day_lykey
+            level: customyear
         secondary_attributes:
           - unique_name: d_Custom_Day_Of_Month
             label: Custom Day Of Month
