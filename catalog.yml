@@ -1,0 +1,6 @@
+version: 1
+unique_name: Shared Library
+object_type: catalog
+label: Shared Library
+aggressive_agg_promotion: false
+build_speculative_aggs: true

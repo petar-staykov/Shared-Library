@@ -1,0 +1,6 @@
+unique_name: Sample
+object_type: model
+label: Sample
+metrics:
+  - unique_name: actual_delivered
+relationships: []
